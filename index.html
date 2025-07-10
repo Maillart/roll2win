@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lancer pour Gagner / Roll to Win</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Lancer pour Gagner</h1>
+    <p class="sub-title">Mise minimale : 100 Ar | Solde maximum : 5000 Ar</p>
+
+    <div class="counter">
+      <span id="digit1" class="digit">0</span>
+      <span id="digit2" class="digit">0</span>
+      <span id="digit3" class="digit">0</span>
+      <span id="digit4" class="digit">0</span>
+      <span id="digit5" class="digit">0</span>
+    </div>
+
+    <input type="number" id="mise" placeholder="Entrez votre mise (min 100 Ar)" />
+    <button id="rollBtn">Lancer</button>
+
+    <div id="resultMessage" class="message"></div>
+
+    <div class="payout-table">
+      <h3>Table des Gains</h3>
+      <table>
+        <tr><td>0 – 9885</td><td>0 Ar</td></tr>
+        <tr><td>9886 – 9985</td><td>100 Ar</td></tr>
+        <tr><td>9986 – 9993</td><td>200 Ar</td></tr>
+        <tr><td>9994 – 9997</td><td>300 Ar</td></tr>
+        <tr><td>9998 – 9999</td><td>400 Ar</td></tr>
+        <tr><td>10000</td><td>1500 Ar</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
